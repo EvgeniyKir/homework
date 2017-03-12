@@ -1,0 +1,249 @@
+@import "reset.css" screen;
+@font-face {
+    font-family: "Tahoma";
+    src: url("../fonts/Tahoma.ttf");
+    src: url("../fonts/Tahoma.woff");
+    src: url("../fonts/Tahoma.eot");
+    src: url("../fonts/Tahoma.svg");
+}
+
+body {
+
+}
+.conteiner {
+    margin: 0 auto;
+    width:1280px;
+    height:1023px;
+    border-top: 1px solid #b6bbc1;
+    background-image: url("/images/background.jpg");
+    background-repeat: repeat-x;
+}
+.workconteiner {
+    width: 1018px;
+    height: 988px;
+    margin: 0 auto;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.shadow {
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid #000;
+    background-color: #fff;
+}
+.topblock {
+    position: relative;
+    width: 100%;
+    height: 175px;
+}
+.logo {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    display: inline-block;
+    width: 283px;
+    height: 164px;
+    background-image: url("/images/logo1.png");
+    background-position: bottom left;
+}
+.logotext {
+    position: absolute;
+    bottom: 57px;
+    left: 70px;
+    color: #1289a7;
+    font-family: "Tahoma";
+    font-size: 12px;
+
+}
+.contacts {
+    margin-left: 850px;
+    padding-top: 10px;
+    font-family: "Tahoma";
+    opacity: .8; /* layer alpha */
+    color: #1289a7; /* text color */
+
+    font-size: 12px;
+}
+.contacts p {
+    margin-bottom: 7px;
+}
+.countreslinks {
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+    width: 440px;
+    height: 60px;
+    /*margin-left:500px;
+    margin-bottom: 0;      */
+}
+.countreslinks ul li {
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+    margin-right: 10px;
+    text-align: center;
+}
+.countreslinks ul li a {
+    color: #1289a7; /* text color */
+    font-family: "Tahoma";
+    font-size: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+.countreslinks ul li a span {
+    display: inline-block;
+    width: 100%;
+}
+/*    Banner       */
+.banner {
+    width: 1018px;
+    height: 237px;
+    background-image: url("/images/sea2.png");
+    border-top: 1px solid #12baa7;
+    border-bottom: 1px solid #12baa7;
+}
+/*    Banner   end       */
+/*   Menu      */
+.menu {
+    width: 100%;
+    height: 29px;
+    margin-top: 1px;
+
+    border-bottom: 1px solid #000;
+    box-shadow: 0 2px 3px #000;
+    background-image: linear-gradient(to top, #303030 0%, #373737 100%) ;
+}
+.menuspace {
+    width: 100%;
+
+}
+.menuitem {
+    position: relative;
+    display: inline-block;
+    width: 13.8%;
+    text-align: center;
+    padding-top: 7px;
+    height: 100%;
+}
+.linkmenuitem {
+    display: inline-block;
+    height: 29px;
+    margin-bottom: 0px;
+}
+.menuitem a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Tahoma";
+    font-size: 14px;
+    transition: 0.5s all;
+}
+.submenu {
+    position: absolute;
+    width: 130px;
+    opacity: 0;
+    -webkit-transition: prop time;
+    -moz-transition: prop time;
+    -ms-transition: prop time;
+    -o-transition: prop time;
+    transition:prop time;
+    top: -9999em;
+    left: 14px;
+
+}
+.menuitem:hover .submenu {
+    opacity: 1;
+    top: 30px;
+}
+.menuitemsub::after {
+    content:"";
+    position: absolute;
+    border: 3px solid;
+    border-color: #fff transparent transparent transparent;
+    top: 1em;
+    right: 1em;
+}
+/*
+.menuitemsub:hover::after {
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+*/
+.menuitemsub:hover::after {
+    border-color: transparent transparent #fff transparent;
+    top: 0.7em;
+}
+.submenuitem {
+    background-image: linear-gradient(to top, #303030 0%, #373737 100%);
+
+}
+.submenuitem a{
+    display: inline-block;
+    padding: 5px 5px 8px 0px;
+}
+/*   Menu  end       */
+/*   Content stert      */
+.sidecontentleft {
+    float: left;
+    width: 179px;
+    height: 546px;
+    background-color: #edeef0;
+    color: #414b43; /* text color */
+    font-family: "Tahoma";
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0px 10px 10px 20px;
+    margin: 3px;
+    border-right: 1px solid #c7cacf;
+}
+.sidecontentleft h1 {
+    color: #414b43; /* text color */
+    font-family: "Tahoma";
+    font-size: 18px;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.sidecontentright {
+    float: right;
+    width: 179px;
+    height: 546px;
+    background-color: #edeef0;
+    color: #414b43; /* text color */
+    font-family: "Tahoma";
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0px 10px 10px 20px;
+    margin: 3px;
+    border-left: 1px solid #c7cacf;
+}
+.sidecontentright h1 {
+    color: #414b43; /* text color */
+    font-family: "Tahoma";
+    font-size: 18px;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+/*   Content end      */
+.clearshadow {
+    /*width: 100%;      */
+    margin-top:4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    height: 20px;
+    background-color: #0c739f;
+    border:1px solid #0c739f;
+}
+
+.footer {
+    opacity: .6;
+    color: #fff;
+    width: 100%;
+    font-family: "Tahoma";
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top:4px;
+}
